@@ -101,8 +101,76 @@
         }
         #video{
             width: 570px;
-            margin:2px auto;
+            margin:2px auto; 
         }
+
+        #offers{
+            display:flex;
+            justify-content: center;
+            
+        }
+
+        .suboffers{
+            width:16em;
+            border:1px solid black;
+            display:inline-block;
+            min-height:8em;
+            margin:0 1em;
+            text-align:center;
+            /* padding: .5em; */
+            margin-top: 4em;
+        }
+
+        .suboffers h4{
+            background:grey;
+            height:2em;
+        }
+
+        .suboffers p{
+            padding:.2em .5em 0 .5em;
+        }
+
+        .suboffers input[type='button']{
+            width:8em;
+            height:2em;
+            background: blue;
+            color:white;
+            margin-top:2em;
+            border:1px solid blue;
+        }
+
+        footer{
+          
+            display:block;
+            width:52.5em;
+            background: grey;
+            margin: 1em auto;
+            height:4em;
+        }
+
+        footer ul, footer p{
+            list-style:none;
+            display:block;
+            margin-left:10em;
+            width:40em;
+            text-align:right
+        }
+
+        /* footer p{
+
+        } */
+
+        footer a{
+            text-decoration: none;
+            color:black;
+        }
+
+        footer li{
+            display:inline-block;
+            padding: .2em .5em;
+            
+        }
+
     </style>
 </head>
 
@@ -131,21 +199,21 @@
     </section>
     <section id="two">
         <div>
-            <div class="icon"><img src="/icons/guitar.png"></div>
+            <div class="icon"><img src="icons/guitar.png"></div>
             <div class="info">
                 <h1>Premium Materials</h1>
                 <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
             </div>
         </div>
         <div>
-            <div class="icon"><img src="/icons/speaker.png"></div>
+            <div class="icon"><img src="icons/speaker.png"></div>
             <div class="info">
                 <h1>High Quality Sound</h1>
                 <p>Our guitars are made of high quality materials that will provide a bright and crisp sound, and an amazing experience. </p>
             </div>
         </div>
         <div>
-            <div class="icon"><img src="/icons/chair.png"></div>
+            <div class="icon"><img src="icons/chair.png"></div>
             <div class="info">
                 <h1>Fast Shipping</h1>
                 <p>We will ship your guitar as fast as it's ready, and we'll ship it directly to your doorstep. So you don't have to worry.</p>
@@ -155,6 +223,49 @@
     <section id="video">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/yxXBhKJnRR8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
+
+
+    <section id="offers">
+
+        <div id="premium" class="suboffers">
+            <h4>premium</h4>
+            <p>$700</p>
+            <p>Best exprerience</p>
+            <p>Comfort at its peak</p>
+            <p>Sorround sound experience</p>
+            <input type="button" value="SELECT">
+        </div>
+
+        <div id="Gold" class="suboffers">
+            <h4>Gold</h4>
+            <p>$800</p>
+            <p>Best of the best</p>
+            <p>Spacious</p>
+            <p>Limited numbers</p>
+            <input type="button" value="SELECT">
+        </div>
+
+        <div id="Basic" class="suboffers">
+            <h4>Basic</h4>
+            <p>$400</p>
+            <p>Good exprerience</p>
+            <p>Comfort is ensured</p>
+            <p>High quality sound experience</p>
+
+            <input type="button" value="SELECT">
+        </div>
+
+    </section>
+
+    <footer>
+        <ul>
+            <li><a href="#">privacy</a></li>
+            <li><a href="#">about us</a></li>
+            <li><a href="https://github.com/jasonfelice/jasonfelice">profile-link</a></li>
+        </ul>
+
+        <p>Copyright 2022, Guitors</p>
+    </footer>
 </body>
 
 </html>
