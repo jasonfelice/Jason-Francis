@@ -1,12 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Landing Page - Jason/Francis</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 30px 2px;
+        }
+
+        .logo {
+            font-size: 30px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: bold;
+            color: rgb(63, 63, 63);
+        }
+
+        #navbar ul {
+            display: flex;
+
+
+        }
+
+        #navbar ul li {
+            list-style: none;
+            margin: 2px 75px;
+            padding: 10px;
+        }
+
+        #navbar ul li a {
+            font-size: 1.1rem;
+            color: rgb(61, 61, 61);
+            text-decoration: none;
+        }
+
+        #welcome-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        #welcome-section div{
+            text-align: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            width: 500px;
+            margin: 2px auto;
+        }
+        #form-container div input{
+            padding: .2em;
+            width: 300px;
+            height: 25px;
+            margin: 10px;
+        }
+        input[type='submit']{
+            color: white;
+            background-color: brown;
+            padding: 8px;
+            width: 100px;
+            border-radius: 5px;
+            border: none;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 1.05rem;
+        }
+        input[type='submit']:hover{
+            background-color: rgb(119, 31, 31);
+        }
+        #two{
+            margin: 80px 2px;
+            padding: 10px;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <header>
+        <div class="logo">Authentic Guitars</div>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">How It Works</a></li>
+                <li><a href="#">Pricing</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <section id="welcome-section">
+        <div>
+        <h1>Handcrafted Guitars</h1>
+        <form action="/backend.php" id="form-container">
+            <div>
+                <input type="email" name="email" id="email" placeholder="Enter your email">
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    </section>
+    <section id="two">
+        <div>
+            <div class="icon"></div>
+            <h1>Premium Materials</h1>
+            <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+        </div>
+    </section>
 </body>
+
 </html>
