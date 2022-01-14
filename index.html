@@ -78,6 +78,30 @@
         #two{
             margin: 80px 2px;
             padding: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        .icon{
+            width: 100px;
+            padding: 5px 35px;
+        }
+        .icon img{
+            width: 80px;
+            height: 80px;
+        }
+        #two div div{
+            display: inline-block;
+        }
+        #two div{
+           margin: 10px auto;;
+        }
+        .info{
+            margin: 2px 2px;
+            padding: 10px 50px;
+        }
+        #video{
+            width: 570px;
+            margin:2px auto;
         }
     </style>
 </head>
@@ -107,10 +131,29 @@
     </section>
     <section id="two">
         <div>
-            <div class="icon"></div>
-            <h1>Premium Materials</h1>
-            <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+            <div class="icon"><img src="/icons/guitar.png"></div>
+            <div class="info">
+                <h1>Premium Materials</h1>
+                <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+            </div>
         </div>
+        <div>
+            <div class="icon"><img src="/icons/speaker.png"></div>
+            <div class="info">
+                <h1>High Quality Sound</h1>
+                <p>Our guitars are made of high quality materials that will provide a bright and crisp sound, and an amazing experience. </p>
+            </div>
+        </div>
+        <div>
+            <div class="icon"><img src="/icons/chair.png"></div>
+            <div class="info">
+                <h1>Fast Shipping</h1>
+                <p>We will ship your guitar as fast as it's ready, and we'll ship it directly to your doorstep. So you don't have to worry.</p>
+            </div>
+        </div>
+    </section>
+    <section id="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/yxXBhKJnRR8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
 </body>
 
